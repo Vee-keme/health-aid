@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" flex justify-between  bg-footerCol py-10 px-16 flex-wrap">
+    <div className=" flex justify-between w-full bg-footerCol py-10 px-16 flex-wrap fixed bottom-0">
       {/* CareFinder */}
       <div className="mr-5">
         <h4 className="mb-8 text-darkBlue font-bold tracking-wider">
