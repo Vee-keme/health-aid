@@ -1,0 +1,28 @@
+ LINE 1 - 28 REMOVED FOOTER BITS
+ 
+ {/* CareFinder */}
+        <div className="">
+          <h4 className="mb-4 text-darkBlue font-bold tracking-wider">
+            CareFinder
+          </h4>
+          <p className="pb-1">Plot 42, Akinza Street,</p>
+          <p className="pb-1">Victoria island, Lagos</p>
+          <p>+2349167351788</p>
+        </div>
+        {/* About us */}
+        <div>
+          <h4 className="mb-4 text-darkBlue font-bold tracking-wider">
+            About Us
+          </h4>
+          <p className="pb-1">News & Media</p>
+          <p className="pb-1">Contact Us</p>
+        </div>
+        {/* Quick links */}
+        <div>
+          <h4 className="mb-4 text-darkBlue font-bold tracking-wider">
+            Quick Links
+          </h4>
+          <p className="pb-1">My account</p>
+          <p className="pb-1">Book an appointment</p>
+          <p>Library</p>
+        </div>

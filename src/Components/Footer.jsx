@@ -1,36 +1,49 @@
 import React from "react";
 
 const Footer = () => {
+  const flexBetween = "flex justify-between items-center ";
+
   return (
-    <div className=" flex justify-between  bg-footerCol py-10 px-16 flex-wrap">
-      {/* CareFinder */}
-      <div className="mr-5">
-        <h4 className="mb-8 text-darkBlue font-bold tracking-wider">
-          CareFinder
-        </h4>
-        <p className="pb-1">Plot 42, Akinza Street,</p>
-        <p className="pb-1">Victoria island, Lagos</p>
-        <p>+2349167351788</p>
+    <footer className="w-full bg-footerCol py-10 bottom-0">
+      <div className={`w-5/6 mx-auto flex flex-wrap justify-between`}>
+        {footerSectionData.map(({ title, links }, index) => (
+          <FooterSections key={index} title={title} links={links} />
+        ))}
       </div>
-      {/* About us */}
-      <div>
-        <h4 className="mb-8 text-darkBlue font-bold tracking-wider">
-          About Us
-        </h4>
-        <p className="pb-1">News & Media</p>
-        <p className="pb-1">Contact Us</p>
-      </div>
-      {/* Quick links */}
-      <div>
-        <h4 className="mb-8 text-darkBlue font-bold tracking-wider">
-          Quick Links
-        </h4>
-        <p className="pb-1">My account</p>
-        <p className="pb-1">Book an appointment</p>
-        <p>Library</p>
-      </div>
-    </div>
+    </footer>
   );
 };
 
 export default Footer;
+
+const FooterSections = ({ title, links }) => {
+  return (
+    <div className="mb-6 w-full sm:w-1/2 md:w-1/3 lg:w-auto flex-shrink-0">
+      <h4 className="mb-4 text-darkBlue font-bold tracking-wider">{title}</h4>
+      {links.map((link, index) => (
+        <p key={index} className="pb-1">
+          {link}
+        </p>
+      ))}
+    </div>
+  );
+};
+
+const footerSectionData = [
+  {
+    title: "Health Aid",
+    links: [
+      "Plot 42, Akinza Street",
+      "Victoria island, Lagos",
+      "+2349167351788",
+    ],
+  },
+  {
+    title: "About Us",
+    links: ["News & Media", "Contact Us"],
+  },
+  {
+    title: "Quick Links",
+    links: ["My account", "Book an appointment", "Library"],
+  },
+];
