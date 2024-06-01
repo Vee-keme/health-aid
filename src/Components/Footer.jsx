@@ -4,8 +4,8 @@ const Footer = () => {
   const flexBetween = "flex justify-between items-center ";
 
   return (
-    <footer className=" flex justify-between w-full bg-footerCol py-10 flex-wrap fixed bottom-0">
-      <div className={`${flexBetween} w-5/6 mx-auto`}>
+    <footer className="w-full bg-footerCol py-10 bottom-0">
+      <div className={`w-5/6 mx-auto flex flex-wrap justify-between`}>
         {footerSectionData.map(({ title, links }, index) => (
           <FooterSections key={index} title={title} links={links} />
         ))}
@@ -18,7 +18,7 @@ export default Footer;
 
 const FooterSections = ({ title, links }) => {
   return (
-    <div className="">
+    <div className="mb-6 w-full sm:w-1/2 md:w-1/3 lg:w-auto flex-shrink-0">
       <h4 className="mb-4 text-darkBlue font-bold tracking-wider">{title}</h4>
       {links.map((link, index) => (
         <p key={index} className="pb-1">
