@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="flex justify-between items-center fixed top-0 py-6 w-full  ">
+      <div className="flex justify-between items-center fixed top-0 py-6 w-full ">
         <div className={`${flexBetween} w-5/6 mx-auto`}>
           <div className={`${flexBetween} w-full gap-16`}>
             <h1 className="text-darkBlue text-xl font-bold">Healthaid</h1>
