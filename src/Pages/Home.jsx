@@ -9,21 +9,31 @@ const Home = () => {
   const flexBetween = "flex justify-between items-center ";
 
   return (
-    <main className="w-full">
+    <main className="w-full bg-softBlue pt-[6%]">
       <div className="">
-        <div className={`${flexBetween}`}>
-          <div>
-            <h2>Find the nearest hospital to you and make an appointment</h2>
-            <p>
-              Discover Your Perfect Care: Find Your Hospital, Anytime, Anywhere!
+        {/* <div className={`${flexBetween}`}> */}
+        <div className={`flex items-start justify-between`}>
+          {/* LEFT TEXT */}
+          <div className={`${flexBetween} h-full py-10 px-8 flex-col gap-8`}>
+            <h2 className="text-darkBlue font-bold text-4xl text-center">
+              Find the nearest hospital
+              <br /> to you and make an appointment
+            </h2>
+            <p className="font-semibold text-wrap">
+              Discover Your Perfect Care: Find <br />
+              Your Hospital, Anytime, Anywhere!
             </p>
 
-            <div>
+            <div className={`flex flex-col gap-8`}>
               <button>Get started</button>
               <button>Learn more</button>
             </div>
           </div>
+
+          {/* RIGHT IMAGE */}
+          {/* <div> */}
           <img src={bannerImage} alt="Banner Image" className="w-3/5" />
+          {/* </div> */}
         </div>
 
         {isAboveMediumScreens ? (
